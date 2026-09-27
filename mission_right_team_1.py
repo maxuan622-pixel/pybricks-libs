@@ -18,21 +18,36 @@ from lib_movement_stopping import stop_all
 from lib_attachment_control import run_by_degrees, home
 from lib_sensor_gyro import reset_heading, wait_until_stationary
 
+# negative means left, positive means right
 
 def mission():
     """for station #7, #11."""  
     reset_heading(0)
     drive_straight(690, speed = 400)
     turn_in_place(90)
-    drive_straight(396, speed=200)
+    drive_straight(390, speed=200)
     turn_in_place(45)
     drive_straight(270, speed=75)
-    run_by_degrees(robot.front_attachment, 150, speed=600)
+    run_by_degrees(robot.front_attachment, 150, speed=700)
     drive_straight(-50, speed=200)
     turn_in_place(90)
     drive_straight(400, speed=400)
     turn_in_place(45)
-    drive_straight(500, speed=400)
+    drive_straight(-260, speed=400)
+    turn_in_place(90)
+    run_by_degrees(robot.back_attachment, 130, speed=600)
+    drive_straight(-140, speed=200)
+    run_by_degrees(robot.back_attachment, -200, speed=700)
+    drive_straight(40, speed=300)
+    turn_in_place(-30)
+    run_by_degrees(robot.back_attachment, 200, speed=600)
+    drive_straight(40, speed=100)
+    turn_in_place(-10)
+    run_by_degrees(robot.back_attachment, -55, speed=50)
+    run_by_degrees(robot.front_attachment, 30, speed=100)
+    drive_straight(30, speed=200)
+    turn_in_place(-45)
+    drive_straight(750, speed=200)
     # run_by_degrees(robot.front_attachment, 90, speed=400)
     # turn_in_place(90)
     # drive_straight(200)

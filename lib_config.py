@@ -31,15 +31,15 @@ BACK_ATTACHMENT_MOTOR_DIRECTION = Direction.CLOCKWISE
 # 12-tooth driver into a 36-tooth driven gear. Leave as None for a direct
 # (1:1) connection.
 FRONT_ATTACHMENT_GEARS = [[32, 40], [12, 24]]
-BACK_ATTACHMENT_GEARS = None
+BACK_ATTACHMENT_GEARS = [[32, 40], [12, 24]]
 
 # ---------------------------------------------------------------------------
 # Sensor ports
 # ---------------------------------------------------------------------------
 # Set any of these to None if that sensor is not present on your robot.
-LEFT_COLOR_SENSOR_PORT = Port.B
+LEFT_COLOR_SENSOR_PORT = None
 RIGHT_COLOR_SENSOR_PORT = None
-DISTANCE_SENSOR_PORT = Port.F
+DISTANCE_SENSOR_PORT = None
 TOUCH_SENSOR_PORT = None
 
 # ---------------------------------------------------------------------------
