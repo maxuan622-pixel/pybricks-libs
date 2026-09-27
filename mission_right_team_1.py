@@ -23,11 +23,15 @@ from lib_sensor_gyro import reset_heading, wait_until_stationary
 def mission():
     """for station #7, #11."""  
     reset_heading(0)
-    drive_straight(690, speed = 400)
-    turn_in_place(90)
-    drive_straight(390, speed=200)
+    drive_straight(470, speed = 400)
     turn_in_place(45)
-    drive_straight(270, speed=75)
+    drive_straight(130, speed=200)
+    turn_in_place(-45)
+    drive_straight(150, 100)
+    turn_in_place(90)
+    drive_straight(270, speed=300)
+    turn_in_place(45)
+    drive_straight(300, speed=75)
     run_by_degrees(robot.front_attachment, 150, speed=700)
     drive_straight(-50, speed=200)
     turn_in_place(90)
@@ -48,6 +52,7 @@ def mission():
     drive_straight(30, speed=200)
     turn_in_place(-45)
     drive_straight(750, speed=200)
+
     # run_by_degrees(robot.front_attachment, 90, speed=400)
     # turn_in_place(90)
     # drive_straight(200)
