@@ -60,4 +60,4 @@ def mission_3():
     drive_straight(-280, speed=300)
 if __name__ == "__main__":
 # run_mission_selector()
-    mission_3() 
+    mission_1() 
